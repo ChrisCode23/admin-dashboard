@@ -67,6 +67,8 @@ h6 {
     display: grid;
     grid-template-rows: 1fr 9fr;
     font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
 }
 
 .nav {
