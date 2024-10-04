@@ -66,6 +66,7 @@ h6 {
     background-color: var(--clr-side);
     display: grid;
     grid-template-rows: 1fr 9fr;
+    font-size: 1.4rem;
 }
 
 .nav {
