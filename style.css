@@ -57,45 +57,61 @@ h6 {
     --clr-header: #f8f8f8;
 }
 
+/* Defines the page layout */
 .page {
     display: grid;
     grid-template-columns: 1fr 4fr;
     height: 100vh;
 }
 
+
 .sidebar {
     background-color: var(--clr-side);
     display: grid;
-    grid-template-rows: 1fr 10fr;
-    font-size: 1.5rem;
+    grid-template-rows: 1fr 15fr;
+    font-size: 1.3rem;
     font-weight: 600;
     line-height: 2;
     color: white;
-    padding: 18px;
+    padding:  4px 18px 0;
+}
+
+.sidebar,
+.nav {
+    gap: 16px;
 }
 
 .title {
-    justify-self: flex-start;
+    font-size: 1.4em;
 }
 
 .nav {
     display: grid;
     grid-template-rows: 1fr 2fr;
+    padding-top: 0.5em;
 }
 
 .nav ul,
 .nav li {
     list-style: none;
+    margin-left: 8px;
 }
 
+/* Adjusts the svg icons by aligning them with text */
 .sidebar svg {
     width: 1em;
     height: 1em;
     fill: white;
-    margin-right: 32px;
+    margin-right: 2rem;
     vertical-align: middle;
     position: relative;
     bottom: .02em;
+}
+
+.title svg {
+    margin-right: 1.3rem;
+    width: 1.5em;
+    height: 1.5em;
 }
 
 .sidebar .title,
