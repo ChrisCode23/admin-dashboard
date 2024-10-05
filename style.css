@@ -85,7 +85,7 @@ h6 {
 
 .nav {
     display: grid;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 3fr;
     padding-top: 0.5em;
 }
 
@@ -188,8 +188,8 @@ input:focus {
     border-radius: 50%;
 }
 
-.user-info [src$=".svg"],
-.user-search [src$=".svg"] {
+[src$=".svg"]
+{
     width: 1.7rem;
     height: 1.7rem;
 }
@@ -265,9 +265,25 @@ input:focus {
     padding: 0 14px 64px;
 }
 
-.project-cards {
+.project-container {
     grid-row: 1 / 3;
     border: 2px solid black;
+    display: grid;
+    grid-template-rows: max-content 1fr;
+}
+
+.project-cards {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.7rem;
+}
+
+.card {
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 8px;
 }
 
 .announcements {
