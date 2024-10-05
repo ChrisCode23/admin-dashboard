@@ -1,17 +1,12 @@
-/*
-  Josh's Custom CSS Reset
-  https://www.joshwcomeau.com/css/custom-css-reset/
-*/
-
 *,
-*::before,
-*::after {
+::before,
+::after {
     box-sizing: border-box;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -57,23 +52,21 @@ h6 {
     --clr-header: #f8f8f8;
 }
 
-/* Defines the page layout */
 .page {
     display: grid;
     grid-template-columns: 1fr 4fr;
     height: 100vh;
 }
 
-
 .sidebar {
     background-color: var(--clr-side);
     display: grid;
-    grid-template-rows: 1fr 15fr;
+    grid-template-rows: 1fr 12fr;
     font-size: 1.3rem;
     font-weight: 600;
     line-height: 2;
     color: white;
-    padding:  4px 18px 0;
+    padding: 4px 18px 0px;
 }
 
 .sidebar,
@@ -97,7 +90,6 @@ h6 {
     margin-left: 8px;
 }
 
-/* Adjusts the svg icons by aligning them with text */
 .sidebar svg {
     width: 1em;
     height: 1em;
@@ -105,7 +97,7 @@ h6 {
     margin-right: 2rem;
     vertical-align: middle;
     position: relative;
-    bottom: .02em;
+    bottom: 0.02em;
 }
 
 .title svg {
@@ -124,11 +116,92 @@ h6 {
 
 .main {
     display: grid;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 4.8fr;
 }
 
 .header {
     background-color: var(--clr-header);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0px 2rem;
+}
+
+.user-search {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 10fr;
+    align-items: center;
+}
+
+.user-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    place-items: center end;
+}
+
+input {
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(223, 233, 238);
+    height: 2rem;
+    padding: 12px;
+}
+
+input:focus {
+    outline: rgb(44, 43, 43) solid 1px;
+}
+
+.user-search label {
+    justify-self: center;
+}
+
+.user-avatar {
+    width: 60px;
+}
+
+.user-avatar img {
+    object-fit: contain;
+    border: none;
+    border-radius: 50%;
+}
+
+.user-info [src$=".svg"],
+.user-search [src$=".svg"] {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.welcome-message {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.welcome-message .user-avatar {
+    grid-row: 1 / 3;
+    place-self: center;
+}
+
+.options {
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.options button {
+    background-color: var(--clr-side);
+    font-weight: bold;
+    color: white;
+    padding: 8px 44px;
+    border: none;
+    border-radius: 20px;
 }
 
 .main-content {
