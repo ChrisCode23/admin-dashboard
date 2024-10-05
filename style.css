@@ -209,7 +209,7 @@ input:focus {
     display: grid;
     font-weight: bold;
     font-size: 0.9rem;
-    align-items: center;
+    align-items: end;
 }
 
 .welcome-message .user-name {
