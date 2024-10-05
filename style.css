@@ -135,6 +135,7 @@ h6 {
 .main {
     display: grid;
     grid-template-rows: 1fr 4.8fr;
+    row-gap: 2rem;
 }
 
 .header {
@@ -257,4 +258,22 @@ input:focus {
 
 .main-content {
     background-color: var(--clr-main);
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 0.6fr 0.4fr;
+    gap: 1.7rem 1.2rem;
+    padding: 0 14px 64px;
+}
+
+.project-cards {
+    grid-row: 1 / 3;
+    border: 2px solid black;
+}
+
+.announcements {
+    border: 2px solid red;
+}
+
+.trending {
+    border: 2px solid green;
 }
