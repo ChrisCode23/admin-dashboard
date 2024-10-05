@@ -161,8 +161,10 @@ input:focus {
 }
 
 .user-avatar img {
-    object-fit: contain;
-    border: none;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border: 1px solid transparent;
     border-radius: 50%;
 }
 
