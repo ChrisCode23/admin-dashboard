@@ -119,6 +119,19 @@ h6 {
     align-content: center;
 }
 
+.sidebar a {
+    text-decoration: none;
+}
+
+.sidebar a:link, 
+.sidebar a:visited {
+    color: white;
+}
+
+.sidebar a:hover {
+    color: rgb(231, 231, 231);
+}
+
 .main {
     display: grid;
     grid-template-rows: 1fr 4.8fr;
