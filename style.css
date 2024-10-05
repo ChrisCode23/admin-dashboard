@@ -47,9 +47,12 @@ h6 {
 }
 
 :root {
-    --clr-side: #00a2ff;
-    --clr-side-darker: #0a8dd8;
-    --clr-side-lighter: #64c6ff;
+    --clr-side-h: 202;
+    --clr-side-s: 100%;
+    --clr-side-l: 50%;
+    --clr-side: hsl(var(--clr-side-h), var(--clr-side-s), var(--clr-side-l));
+    --clr-side-darker: hsl(var(--clr-side-h), var(--clr-side-s), calc(var(--clr-side-l) / .9));
+    --clr-side-lighter: hsl(var(--clr-side-h), var(--clr-side-s), calc(var(--clr-side-l) * .9));
     --clr-main: #e4f5ff;
     --clr-header: #f8f8f8;
 }
