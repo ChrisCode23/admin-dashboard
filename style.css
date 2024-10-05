@@ -48,6 +48,8 @@ h6 {
 
 :root {
     --clr-side: #00a2ff;
+    --clr-side-darker: #0a8dd8;
+    --clr-side-lighter: #64c6ff;
     --clr-main: #e4f5ff;
     --clr-header: #f8f8f8;
 }
@@ -226,6 +228,15 @@ input:focus {
     padding: 8px 44px;
     border: none;
     border-radius: 20px;
+}
+
+.options button:hover {
+    cursor: pointer;
+    background-color: var(--clr-side-lighter);
+}
+
+.options button:active {
+    background-color: var(--clr-side-darker);
 }
 
 .main-content {
