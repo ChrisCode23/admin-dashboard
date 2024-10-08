@@ -283,7 +283,7 @@ input:focus {
     gap: 1.7rem;
 }
 
-.card {
+.project-container .card {
     background-color: white;
     border-radius: 8px;
     display: grid;
@@ -312,10 +312,10 @@ input:focus {
     place-content: flex-end;
 }
 
-.announcements {
+.announce-container {
     border: 2px solid red;
 }
 
-.trending {
+.trends-container {
     border: 2px solid green;
 }
