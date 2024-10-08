@@ -54,7 +54,6 @@ h6 {
     --clr-side-darker: hsl(var(--clr-side-h), var(--clr-side-s), calc(var(--clr-side-l) / .9));
     --clr-side-lighter: hsl(var(--clr-side-h), var(--clr-side-s), calc(var(--clr-side-l) * .9));
     --clr-main: #e4f5ff;
-    --clr-header: #f8f8f8;
 }
 
 .page {
@@ -134,13 +133,13 @@ h6 {
 
 .main {
     display: grid;
-    grid-template-rows: 250px 1fr;
+    grid-template-rows: 200px 1fr;
     row-gap: 2rem;
     background-color: var(--clr-main)
 }
 
 .header {
-    background-color: var(--clr-header);
+    background-color: #f8f8f8;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -347,6 +346,9 @@ input:focus {
     font-weight: bold;
     font-size: 1.2rem;
 }
+
+.announce-container .card-description,
+.
 
 .announce-container .card-description {
     color: #585858;
