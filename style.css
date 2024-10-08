@@ -259,7 +259,7 @@ input:focus {
     background-color: var(--clr-main);
     display: grid;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: 0.6fr 0.4fr;
+    grid-template-rows: 1fr 1fr;
     gap: 1.7rem 1.2rem;
     padding: 0 14px 64px;
 }
@@ -293,14 +293,14 @@ input:focus {
     box-shadow: 1px 1px 8px 0px grey;
 }
 
-.card-title {
+ .project-container .card-title {
     align-items: end;
     display: grid;
     font-weight: bold;
     font-size: 1.5rem;
 }
 
-.card-description {
+.project-container .card-description {
     color: #585858;
     font-size: 1.2rem;
 }
@@ -314,7 +314,34 @@ input:focus {
 
 .announce-container {
     border: 2px solid red;
+    display: grid;
+    grid-template-rows: max-content 1fr;
 }
+
+.announce-cards {
+    background-color: white;
+    border-radius: 8px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.announce-container .card {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.announce-container .card-title {
+    align-items: end;
+    display: grid;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.announce-container .card-description {
+    color: #585858;
+    font-size: 0.9rem;
+}
+
 
 .trends-container {
     border: 2px solid green;
