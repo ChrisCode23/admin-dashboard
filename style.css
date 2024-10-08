@@ -270,6 +270,12 @@ input:focus {
     grid-template-rows: max-content 1fr;
 }
 
+.project-container,
+.announce-container,
+.trends-container {
+    gap: 15px;
+}
+
 .intro {
     font-weight: bold;
     font-size: 1.7rem;
