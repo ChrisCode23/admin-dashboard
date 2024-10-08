@@ -271,7 +271,7 @@ input:focus {
     grid-template-rows: max-content 1fr;
 }
 
-.project-container .intro {
+.intro {
     font-weight: bold;
     font-size: 1.7rem;
 }
