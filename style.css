@@ -54,6 +54,7 @@ h6 {
     --clr-side-darker: hsl(var(--clr-side-h), var(--clr-side-s), calc(var(--clr-side-l) / .9));
     --clr-side-lighter: hsl(var(--clr-side-h), var(--clr-side-s), calc(var(--clr-side-l) * .9));
     --clr-main: #e4f5ff;
+    --clr-text-secondary: #585858;
 }
 
 .page {
@@ -305,7 +306,7 @@ input:focus {
 }
 
 .project-container .card-description {
-    color: #585858;
+    color: var(--clr-text-secondary);
     font-size: 1.2rem;
 }
 
@@ -319,7 +320,6 @@ input:focus {
 .announce-container {
     display: grid;
     grid-template-rows: max-content 1fr;
-    
 }
 
 .announce-cards {
@@ -347,11 +347,9 @@ input:focus {
     font-size: 1.2rem;
 }
 
-.announce-container .card-description,
-.
 
 .announce-container .card-description {
-    color: #585858;
+    color: var(--clr-text-secondary);
     font-size: 0.9rem;
 }
 
@@ -389,5 +387,5 @@ input:focus {
 }
 
 .trends-cards .card-title {
-    color: #585858;
+    color: var(--clr-text-secondary);
 }
