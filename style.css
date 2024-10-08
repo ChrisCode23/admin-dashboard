@@ -136,6 +136,7 @@ h6 {
     display: grid;
     grid-template-rows: 250px 1fr;
     row-gap: 2rem;
+    background-color: var(--clr-main)
 }
 
 .header {
@@ -256,7 +257,6 @@ input:focus {
 }
 
 .main-content {
-    background-color: var(--clr-main);
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
