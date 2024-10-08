@@ -308,18 +308,12 @@ input:focus {
 .card .options {
     display: grid;
     grid-template-columns: 5fr 1fr 1fr;
-    /* align-content: space-between; */
     justify-items: end;
     place-content: flex-end;
 }
 
 .announcements {
     border: 2px solid red;
-    grid-column: 2 / 3;
-}
-
-.trending {
-    grid-column: 2 / 3;
 }
 
 .trending {
