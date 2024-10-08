@@ -47,14 +47,18 @@ h6 {
 }
 
 :root {
+    /* Calculates the dark and lighter variants based on the parameters of --clr-side-h, --cls-side-s and --cls-side-l */
     --clr-side-h: 202;
     --clr-side-s: 100%;
     --clr-side-l: 50%;
     --clr-side: hsl(var(--clr-side-h), var(--clr-side-s), var(--clr-side-l));
     --clr-side-darker: hsl(var(--clr-side-h), var(--clr-side-s), calc(var(--clr-side-l) / .9));
     --clr-side-lighter: hsl(var(--clr-side-h), var(--clr-side-s), calc(var(--clr-side-l) * .9));
-    --clr-main: #e4f5ff;
-    --clr-text-secondary: #585858;
+
+    /* Calculates the background color based on the color used on the sidebar (--cls-side) */
+    --clr-bg: hsl(var(--clr-side-h), calc(var(--clr-side-s) * .9), calc(var(--clr-side-l) * 1.88));
+    
+    --clr-txt-secondary: #585858;
 }
 
 .page {
@@ -136,7 +140,7 @@ h6 {
     display: grid;
     grid-template-rows: 200px 1fr;
     row-gap: 2rem;
-    background-color: var(--clr-main)
+    background-color: var(--clr-bg)
 }
 
 .header {
@@ -164,7 +168,7 @@ h6 {
 input {
     border: none;
     border-radius: 20px;
-    background-color: var(--clr-main);
+    background-color: var(--clr-bg);
     height: 2rem;
     padding: 12px;
 }
@@ -306,7 +310,7 @@ input:focus {
 }
 
 .project-container .card-description {
-    color: var(--clr-text-secondary);
+    color: var(--clr-txt-secondary);
     font-size: 1.2rem;
 }
 
@@ -349,7 +353,7 @@ input:focus {
 
 
 .announce-container .card-description {
-    color: var(--clr-text-secondary);
+    color: var(--clr-txt-secondary);
     font-size: 0.9rem;
 }
 
@@ -387,5 +391,5 @@ input:focus {
 }
 
 .trends-cards .card-title {
-    color: var(--clr-text-secondary);
+    color: var(--clr-txt-secondary);
 }
